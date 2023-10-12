@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get All Students</title>
+    <link rel="stylesheet" href="GetALL.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>All Students</h1>
+
+        <!-- Button to fetch and display all students -->
+        <button id="getAllButton">Get All Students</button>
+        <button class="back-button" onclick="goBack()">Back</button>
+
+        <!-- Display Students List in Table Format -->
+        <div id="studentsTableContainer"></div>
+
+        <script src="GetALL.js"></script>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = '../Home.html'; // Navigate back to the home page
+        }
+    </script>
+</body>
+
+</html>

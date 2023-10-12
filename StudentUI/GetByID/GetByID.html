@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Student by ID</title>
+    <link rel="stylesheet" href="GetByID.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Get Student by ID</h1>
+
+        <form id="getByIdForm">
+            <input type="text" id="studentId" placeholder="Enter Student ID" required>
+            <button type="submit">Get Student</button>
+            <button class="back-button" onclick="goBack()">Back</button>
+        </form>
+
+        <div id="studentDetails">
+            <!-- Student details will be displayed here -->
+        </div>
+    </div>
+
+    <script src="GetByID.js"></script>
+
+    <script>
+        function goBack() {
+            window.location.href = '../Home.html'; // Navigate back to the home page
+        }
+    </script>
+</body>
+
+</html>
